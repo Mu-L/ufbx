@@ -27075,7 +27075,7 @@ ufbxi_nodiscard static ufbxi_noinline int ufbxi_bake_postprocess_quat(ufbxi_bake
 	ufbx_quat ref = src.data[0].value;
 	for (size_t i = 1; i < src.count; i++) {
 		ufbx_quat v = src.data[i].value;
-		if (v.x != ref.x || v.y != ref.y || v.z != ref.z || v.y != ref.w) {
+		if (v.x != ref.x || v.y != ref.y || v.z != ref.z || v.w != ref.w) {
 			constant = false;
 			break;
 		}
